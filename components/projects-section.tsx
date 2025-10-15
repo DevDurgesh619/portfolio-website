@@ -38,18 +38,18 @@ export default function ProjectsSection() {
       imgSrc: "/images/Brainly.jpg",
     },
     {
-      title: "Instagram Automation Platform",
-      tech: ["Next.js", "Queues", "Workers"],
-      gitLink: "https://github.com/yourusername/insta-automation",
-      liveDemoLink: "https://instaauto.vercel.app",
-      imgSrc: "/images/projects/instaautomation.png",
-    },
-    {
       title: "Real-Time Chat App",
       tech: ["Next.js", "WebRTC", "Redis"],
       gitLink: "https://github.com/yourusername/realtime-chat",
       liveDemoLink: "https://realtimechat.vercel.app",
       imgSrc: "/images/projects/realtimechat.png",
+    },
+    {
+      title: "Instagram Automation Platform",
+      tech: ["Next.js", "Queues", "Workers"],
+      gitLink: "https://github.com/DevDurgesh619/InstaMessageAutomation",
+      liveDemoLink: "https://instaauto.vercel.app",
+      imgSrc: "/images/instaAutomation.jpg",
     },
   ]
 
@@ -88,7 +88,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              //@
+              //@ts-ignore
               variants={item}
               whileHover={{
                 scale: 1.04,
