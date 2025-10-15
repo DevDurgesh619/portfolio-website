@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Palette */
+  --background: #0a0a0a; /* near-black */
+  --surface: #1a1a1a; /* elevated surfaces */
+  --border: #2a2a2a; /* low-contrast borders */
+  --text-primary: #e0e0e0; /* headlines & important text */
+  --text-secondary: #a0a0a0; /* body/secondary text */
+  --accent: #00ffff; /* interactive elements */
+  --accent-hover: #99ffff; /* hover state */
+
+  /* Map to shadcn tokens */
+  --foreground: var(--text-primary);
+  --card: var(--surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--text-primary);
+  --primary-foreground: var(--background);
+  --secondary: #111111; /* used for Visual Lab section bg */
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-secondary);
+  --accent-foreground: var(--background);
+  --destructive: #ff4d4f;
+  --destructive-foreground: #1a1a1a;
+  --input: var(--border);
+  --ring: #1f9ea8;
+  --chart-1: #00ffff;
+  --chart-2: #99ffff;
+  --chart-3: #2a2a2a;
+  --chart-4: #1a1a1a;
+  --chart-5: #e0e0e0;
+  --radius: 0.625rem;
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--accent);
+  --sidebar-primary-foreground: var(--background);
+  --sidebar-accent: var(--surface);
+  --sidebar-accent-foreground: var(--text-primary);
+  --sidebar-border: var(--border);
+  --sidebar-ring: #1f9ea8;
+}
+
+/* Keep dark class aligned with the same palette (site is dark by design) */
+.dark {
+  --background: #0a0a0a;
+  --foreground: var(--text-primary);
+  --card: var(--surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--text-primary);
+  --primary-foreground: var(--background);
+  --secondary: #111111;
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--surface);
+  --muted-foreground: var(--text-secondary);
+  --accent: #00ffff;
+  --accent-foreground: var(--background);
+  --destructive: #ff4d4f;
+  --destructive-foreground: #1a1a1a;
+  --border: #2a2a2a;
+  --input: #2a2a2a;
+  --ring: #1f9ea8;
+}
+
+/* map fonts to Inter and Fira Code */
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-fira-code);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* small utility for section reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal[data-visible="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
