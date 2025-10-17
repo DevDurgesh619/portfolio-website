@@ -40,9 +40,9 @@ export default function ProjectsSection() {
     {
       title: "Real-Time Chat App",
       tech: ["Next.js", "WebRTC", "Redis"],
-      gitLink: "https://github.com/yourusername/realtime-chat",
-      liveDemoLink: "https://realtimechat.vercel.app",
-      imgSrc: "/images/projects/realtimechat.png",
+      gitLink: "https://github.com/DevDurgesh619/Real-Time-Chat-App",
+      liveDemoLink: "https://real-time-chat-app-atm8.onrender.com",
+      imgSrc: "/images/chat-app.jpg",
     },
     {
       title: "Instagram Automation Platform",

@@ -21,7 +21,7 @@ export default function Footer() {
               href="mailto:hello@example.com"
               className="inline-block font-mono text-[color:var(--accent)] hover:opacity-90"
             >
-              {"hello@example.com"}
+              {"patidardurgesh@gmail.com"}
             </Link>
           </div>
           {/* Column 2: Quick Links */}
@@ -56,14 +56,14 @@ export default function Footer() {
             <div className="flex items-center gap-4">
               <Link
                 aria-label="GitHub"
-                href="https://github.com/your-handle"
+                href="https://github.com/DevDurgesh619"
                 className="text-[color:var(--text-secondary)] transition-colors hover:text-[color:var(--accent)]"
               >
                 <Github className="h-5 w-5" />
               </Link>
               <Link
                 aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/your-handle"
+                href="https://www.linkedin.com/in/durgesh-patidar-648302225"
                 className="text-[color:var(--text-secondary)] transition-colors hover:text-[color:var(--accent)]"
               >
                 <Linkedin className="h-5 w-5" />
