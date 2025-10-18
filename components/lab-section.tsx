@@ -32,7 +32,7 @@ export default function LabSection() {
             >
               <video
                 ref={video1Ref}
-                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                src="/images/Temple_Run_.mp4"
                 autoPlay
                 loop
                 muted
@@ -60,7 +60,7 @@ export default function LabSection() {
               {/* Replace with your video file */}
               <video
                 ref={video2Ref}
-                src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                src="/images/3D_environment.mp4"
                 autoPlay
                 loop
                 muted
