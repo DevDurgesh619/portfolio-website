@@ -21,7 +21,7 @@ export default function Footer() {
               href="mailto:hello@example.com"
               className="inline-block font-mono text-[color:var(--accent)] hover:opacity-90"
             >
-              {"patidardurgesh@gmail.com"}
+              {"patidardurgesh619@gmail.com"}
             </Link>
           </div>
           {/* Column 2: Quick Links */}
