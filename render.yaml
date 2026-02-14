@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-portfolio
+    env: node
+    buildCommand: pnpm install && pnpm build
+    startCommand: pnpm start
+    # If you have a custom domain, you can add it here
+    # customDomains:
+    #   - myportfolio.com
+    #   - www.myportfolio.com
